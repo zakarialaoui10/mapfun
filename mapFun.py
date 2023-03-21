@@ -6,7 +6,6 @@ def mapFunc(fun,x):
     if isinstance(x,set):return set(map(lambda n:mapFunc(fun,n),x))
     if isinstance(x,frozenset):return frozenset(map(lambda n:mapFunc(fun,n),x))
     if isinstance(x,dict):return dict(map(lambda n:(n[0],mapFunc(fun,n[1])),x.items()))
-    return 0
 
 print(mapFunc(lambda a : a + 1,4))
 print(mapFunc(lambda a : a + 1,4.2))
