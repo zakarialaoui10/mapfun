@@ -1,5 +1,9 @@
 # mapFun
 # Javascript 
+## Install 
+```bash
+npm install @ziko/mapFun
+```
 ```javascript
 console.log(
   mapFun(n => n + 2, 1, "a", [1, 2, 3], true, {
