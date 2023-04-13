@@ -57,7 +57,7 @@ console.log(sin(0,PI/4,[0,PI/6,PI/4,{x:PI/8,y:PI/12}]))
 import React, { useState } from "react";
 import ReactDOM from 'react-dom/client'
 import mapFun from "mapFun"
-const NumberList = () => {
+const App = () => {
   const [numbers, setNumbers] = useState([1, 2, 3, 4, 5]);
   const square = (x) => {
     return x * x;
@@ -76,7 +76,7 @@ const NumberList = () => {
 };
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
-		<NumberList />
+		<App />
 	</React.StrictMode>
 )
 ```
