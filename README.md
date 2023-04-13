@@ -29,7 +29,6 @@ console.log(
 const PI=Math.PI
 const sin=(...args)=>mapFun(Math.sin,...args)
 console.log(sin(0,PI/4,[0,PI/6,PI/4,{x:PI/8,y:PI/12}]))
-
 /* Expected returns
 [
   0,
