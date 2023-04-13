@@ -7,6 +7,7 @@
 ```bash
 npm install @ziko/mapFun
 ```
+### Examples 
 ```javascript
 console.log(
   mapFun(n => n + 2, 1, "a", [1, 2, 3], true, {
@@ -57,6 +58,7 @@ console.log(sin(0,PI/4,[0,PI/6,PI/4,{x:PI/8,y:PI/12}]))
 ```bash
 pip install @ziko/mapFun
 ```
+### Examples 
 ```python
 print(mapFun(lambda a : a + 1,4))
 # Expected return : 5
