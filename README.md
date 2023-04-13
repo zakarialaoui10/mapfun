@@ -2,7 +2,7 @@
 # Javascript 
 ```javascript
 console.log(
-  mapFun((a) => a + 2, 1, "a", [1, 2, 3], true, {
+  mapFun(n => n + 2, 1, "a", [1, 2, 3], true, {
     a: 2,
     b: 3,
     c: { d: 3, e: [1, 3, 4] },
