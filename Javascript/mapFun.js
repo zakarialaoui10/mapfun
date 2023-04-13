@@ -1,5 +1,6 @@
-const mapFun=(fun,...X)=>{
+mapFun=(fun,skip,...X)=>{
     const Y=X.map(x=>{
+        if(typeof(skip)==="string")if(typeof(x)===skip)return x
         if(x===null)return fun(null);
         if(["number","string","boolean","bigint","undefined"].includes(typeof x))return fun(x);
         if(x instanceof Array)return x.map(n=>mapFun(fun,n));
@@ -11,4 +12,3 @@ const mapFun=(fun,...X)=>{
     });
    return Y.length==1?Y[0]:Y; 
 }
-module.exports=mapFun;
