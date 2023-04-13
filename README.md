@@ -53,6 +53,33 @@ console.log(sin(0,PI/4,[0,PI/6,PI/4,{x:PI/8,y:PI/12}]))
 ];
 */
 ```
+```jsx
+import React, { useState } from "react";
+import ReactDOM from 'react-dom/client'
+import mapFun from "mapFun"
+const NumberList = () => {
+  const [numbers, setNumbers] = useState([1, 2, 3, 4, 5]);
+  const square = (x) => {
+    return x * x;
+  };
+  const squaredNumbers = mapFun(square, numbers);
+  return (
+    <div>
+      <h1>Squared Numbers:</h1>
+      <ul>
+        {squaredNumbers.map((number) => (
+          <li>{number}</li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+ReactDOM.createRoot(document.getElementById('root')).render(
+	<React.StrictMode>
+		<NumberList />
+	</React.StrictMode>
+)
+```
 ## Python 
 ### Install 
 ```bash
