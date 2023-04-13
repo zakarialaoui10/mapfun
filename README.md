@@ -1,6 +1,8 @@
 # mapFun
-# Javascript 
-## Install 
+## [Javascript](#javascript)
+## [Python](#python)
+## Javascript 
+### Install 
 ```bash
 npm install @ziko/mapFun
 ```
@@ -49,8 +51,8 @@ console.log(sin(0,PI/4,[0,PI/6,PI/4,{x:PI/8,y:PI/12}]))
 ];
 */
 ```
-# Python 
-## Install 
+## Python 
+### Install 
 ```bash
 pip install @ziko/mapFun
 ```
