@@ -11,5 +11,4 @@ const mapFun=(fun,...X)=>{
     });
    return Y.length==1?Y[0]:Y; 
 }
-
 module.exports=mapFun;
