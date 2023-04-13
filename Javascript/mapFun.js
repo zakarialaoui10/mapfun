@@ -1,4 +1,4 @@
-mapFun=(fun,{skip=[]}={},...X)=>{
+mapFun=(fun,{skip=[],key:false,value:true}={},...X)=>{
     const Y=X.map(x=>{
         if(typeof(skip)==="string")if(typeof(x)===skip)return x
         if(x===null)return fun(null);
