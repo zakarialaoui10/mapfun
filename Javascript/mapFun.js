@@ -17,5 +17,5 @@ console.log(
     c: { d: 3, e: [1, 3, 4] },
   })
 );
-
+const sin=(...args)=>mapFun(Math.sin,...args)
 module.exports=mapFun;
