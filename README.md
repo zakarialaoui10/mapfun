@@ -1,6 +1,7 @@
 # mapFun
-## [Javascript](#javascript)
-## [Python](#python)
+- [Javascript](#javascript)
+- [Python](#python)
+
 ## Javascript 
 ### Install 
 ```bash
