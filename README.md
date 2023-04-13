@@ -56,20 +56,15 @@ console.log(sin(0,PI/4,[0,PI/6,PI/4,{x:PI/8,y:PI/12}]))
 ```jsx
 import React, { useState } from "react";
 import ReactDOM from 'react-dom/client'
-import mapFun from "mapFun"
+import mapFun from "./mapFun.js"
 const App = () => {
-  const [numbers, setNumbers] = useState([1, 2, 3, 4, 5]);
-  const square = (x) => {
-    return x * x;
-  };
-  const squaredNumbers = mapFun(square, numbers);
+  const numbers=[1,2,3,4,5,6,7,8,9,10]
+  const squaredNumbers = mapFun(n=>n*n, numbers);
   return (
     <div>
       <h1>Squared Numbers:</h1>
       <ul>
-        {squaredNumbers.map((number) => (
-          <li>{number}</li>
-        ))}
+        {mapFun(n=><li>{n}</li>,squaredNumbers)}
       </ul>
     </div>
   );
