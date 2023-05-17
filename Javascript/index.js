@@ -1,6 +1,4 @@
 const mapFun = (fun, { skip = [], key = false, value = true } = {}, ...X) => {
-  const isNodeModule = typeof module !== 'undefined' && typeof exports !== 'undefined';
-
   const Y = X.map((x) => {
     if (typeof skip === 'string' && typeof x === skip) return x;
     if (x === null) return fun(null);
