@@ -10,7 +10,11 @@
   "repository": {
     "type": "git",
     "url": "your-git-repository-url"
-  }
+  },
+  "bugs": {
+    "url": "your-bug-reporting-url"
+  },
+  "homepage": "your-library-website",
   "author": "zakaria elalaoui",
   "license": "MIT"
 }
