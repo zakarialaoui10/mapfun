@@ -13,8 +13,9 @@ npm install @ziko/mapFun
 |`fun` |The mapping function that will be applied to each element in the input elements.|
 |`...X`|The elements to be mapped|
 `{ skip = [], key = false, value = true } = {}` | Object with three optional properties `skip`,`key`,`value`|
- - jdjd
- - jdjd
+ - `skip` :
+ - `key` :
+ - `value` :
 
 
 ### Examples 
