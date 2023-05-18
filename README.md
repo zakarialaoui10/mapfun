@@ -48,7 +48,7 @@ console.log(
 const PI=Math.PI
 const sin=(...args)=>mapFun(Math.sin,...args)
 console.log(sin(0,PI/4,[0,PI/6,PI/4,{x:PI/8,y:PI/12}]))
-/* Expected returns
+/* Expected log
 [
   0,
   0.7071067811865475,
@@ -63,6 +63,27 @@ console.log(sin(0,PI/4,[0,PI/6,PI/4,{x:PI/8,y:PI/12}]))
   ],
 ];
 */
+```
+### Advanced Examples 
+```javascript
+ const A=new Map([["a",1],["b",2]]);
+ // Map { 'a' => 1, 'b' => 2 }
+ console.log(mapFun(n=>n+1,{},A));
+ /* Expected log 
+   Map { 'a' => 2, 'b' => 3 }
+ */
+ console.log(mapFun(n=>n+1,{key:true},A));
+ /* Expected log 
+   Map { 'a1' => 2, 'b1' => 3 }
+ */
+ console.log(mapFun(n=>n+1,{value:false},A));
+ /* Expected log 
+   Map { 'a' => 1, 'b' => 2 }
+ */
+ console.log(mapFun(n=>n+1,{key:true,value:false},A));
+ /* Expected log 
+   Map { 'a1' => 1, 'b1' => 2 }
+ */
 ```
 ## Python 
 ### Install 
