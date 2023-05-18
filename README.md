@@ -4,6 +4,11 @@
 
 The `mapFun` function has been developed in JavaScript and Python, offering the same functionality in different programming languages.
 
+##### Syntax
+```javascript
+mapFun(fun,{skip,key,value},...X)
+```
+
 - [Javascript](#javascript)
 - [Python](#python)
 
@@ -12,10 +17,7 @@ The `mapFun` function has been developed in JavaScript and Python, offering the 
 ```bash
 npm install @ziko/mapFun
 ```
-### Syntax
-```javascript
-mapFun(fun,{skip,key,value},...X)
-```
+
 ### Arguments
 - `fun` : The mapping function that will be applied to each element in the input elements.</br>
 - `...X` :The elements to be mapped . </br>
