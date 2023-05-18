@@ -7,6 +7,11 @@
 ```bash
 npm install @ziko/mapFun
 ```
+### arguments
+|arg|Description|
+|--|--|
+|fun|the mapping function that will be applied to each element in the input array.|
+|...X|the elements to be mapped|
 ### Examples 
 ```javascript
 console.log(
