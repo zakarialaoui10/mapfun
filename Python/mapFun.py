@@ -1,22 +1,22 @@
-def split_skip(skip):
-    skipPrimitives = []
-    skipObjects = []
-    for element in skip:
-        if isinstance(element, object) and element is not None:
-            skipObjects.append(element)
+def mapFun(fun, options, *X):
+    skip=[str]
+    key=False
+    value=True
+    def mapRecursive(x):
+        if isinstance(skip, list) and (type(x) in skip or x in skip):
+            return x
+        if isinstance(x, (int, float, str, bool, bytes, bytearray, memoryview, type(None))):
+            return fun(x)
+        if isinstance(x, list):
+            return [mapRecursive(n) for n in x]
+        if isinstance(x, set):
+            return {mapRecursive(n) for n in x}
+        if isinstance(x, dict):
+            return {mapRecursive(k) if key else k: mapRecursive(v) if value else v for k, v in x.items()}
+        if isinstance(x, (tuple, range)):
+            return type(x)(mapRecursive(n) for n in x)
+        if isinstance(x, object):
+            return fun(x)
         else:
-            skipPrimitives.append(element)
-    return list([skipPrimitives,skipObjects])
-def _mapfun(fun,x):
-    if isinstance(x,(int,float,complex,str,bool)):return fun(x)
-    if isinstance(x,list):return list(map(lambda n:mapFun(fun,n),x))
-    if isinstance(x,range):return list(map(lambda n:mapFun(fun,n),x))
-    if isinstance(x,tuple):return tuple(map(lambda n:mapFun(fun,n),x))
-    if isinstance(x,set):return set(map(lambda n:mapFun(fun,n),x))
-    if isinstance(x,frozenset):return frozenset(map(lambda n:mapFun(fun,n),x))
-    if isinstance(x,dict):return dict(map(lambda n:(n[0],mapFun(fun,n[1])),x.items()))
-    return 0
-def mapfun(fun,*y):
-    z=list(map(lambda n:_mapFun(fun,n),y))
-    if len(z)<2:return z[0]
-    return z
+            raise ValueError('Uncategorized data')
+    return [mapRecursive(x) for x in X]
