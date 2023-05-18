@@ -20,3 +20,13 @@ def mapFun(fun, options, *X):
         else:
             raise ValueError('Uncategorized data')
     return [mapRecursive(x) for x in X]
+
+
+
+# Example
+def square(x):
+    return x ** 2
+
+
+result = mapFun(square, {'skip': [str]}, 1, 'hello', [2, 3], {4: 'world'})
+print(result)
