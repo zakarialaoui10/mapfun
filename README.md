@@ -7,7 +7,7 @@
 ```bash
 npm install @ziko/mapFun
 ```
-### arguments
+### Arguments
 - `fun` : The mapping function that will be applied to each element in the input elements.</br>
 - `...X` :The elements to be mapped . </br>
 - `{ skip = [], key = false, value = true } = {}` : Object with three optional properties :
