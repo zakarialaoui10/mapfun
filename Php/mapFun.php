@@ -2,17 +2,12 @@
 function mapFun($fun, $options = [], ...$X) {
   $skip = isset($options['skip']) ? $options['skip'] : [];
   $key = isset($options['key']) ? $options['key'] : false;
-  $value = isset($options['value']) ? $options['value'] : true;
-  
+  $value = isset($options['value']) ? $options['value'] : true; 
   $Y = array_map(function($x) use ($fun, $skip, $key, $value) {
-    if (is_string($skip) || in_array($skip, [null, 'undefined'])) {
-      $skip = [$skip];
-    }
+    if (is_string($skip) || in_array($skip, [null, 'undefined']))$skip = [$skip];
     $skipPrimitives = [];
     $skipObjects = [];
-    foreach ($skip as $element) {
-    	(is_object($element) && $element !== null)?$skipObjects[] = $element:$skipPrimitives[] = $element;
-    }
+    foreach ($skip as $element)(is_object($element) && $element !== null)?$skipObjects[] = $element:$skipPrimitives[] = $element;
     if (in_array(gettype($x), $skipPrimitives) || in_array($x, $skipPrimitives))return $x;
     if ($x === null)return $fun(null);
     if (in_array(gettype($x), ['integer', 'double', 'boolean', 'string']))return $fun($x);
@@ -20,15 +15,6 @@ function mapFun($fun, $options = [], ...$X) {
       return array_map(function($n) use ($fun) {
         return mapFun($fun, [], $n);
       }, $x);
-    }
-    if ($x instanceof Set)return new Set(mapFun($fun, [], ...$x));
-    if ($x instanceof Map) {
-      return new Map(array_map(function($n) use ($fun, $key, $value) {
-        return [
-          $key ? mapFun($fun, [], $n[0]) : $n[0],
-          $value ? mapFun($fun, [], $n[1]) : $n[1],
-        ];
-      }, $x));
     }
     if (is_object($x)) {
       return array_reduce(array_map(function($KEY, $VALUE) use ($fun, $key, $value) {
