@@ -92,11 +92,11 @@ pip install @ziko/mapFun
 ```
 ### Examples 
 ```python
-print(mapFun(lambda a : a + 1,4))
+print(mapFun(lambda a : a + 1,{},4))
 # Expected return : 5
-print(mapFun(lambda a : a + 1,4.2))
+print(mapFun(lambda a : a + 1.0,{},4.2))
 # Expected return : 5.2
-print(mapFun(lambda a : len(a),"Ziko"))
+print(mapFun(lambda a : len(a),{},"Ziko"))
 # Expected return : 4
 print(mapFun(lambda a : a + 5,[1, 2, 3, [4]]))
 # Expected return : [6,7,8,[9]]
