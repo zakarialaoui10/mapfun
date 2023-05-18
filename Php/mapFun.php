@@ -30,12 +30,7 @@ function mapFun($fun, $options = [], ...$X) {
     }
     else throw new Exception('Uncategorized data');
   }, $X);
-
   return count($Y) === 1 ? $Y[0] : $Y;
 }
-
-$result = mapFun(function($n) {
-  return $n + 1;
-}, ['skip' => ["string"]], 1,"k", [1, 2],[[1,2]],['a' => 1]);
 
 print_r($result);
