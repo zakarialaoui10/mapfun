@@ -11,11 +11,7 @@ function mapFun($fun, $options = [], ...$X) {
     $skipPrimitives = [];
     $skipObjects = [];
     foreach ($skip as $element) {
-      if (is_object($element) && $element !== null) {
-        $skipObjects[] = $element;
-      } else {
-        $skipPrimitives[] = $element;
-      }
+    	(is_object($element) && $element !== null)?$skipObjects[] = $element:$skipPrimitives[] = $element;
     }
     if (in_array(gettype($x), $skipPrimitives) || in_array($x, $skipPrimitives))return $x;
     if ($x === null)return $fun(null);
@@ -48,9 +44,12 @@ function mapFun($fun, $options = [], ...$X) {
     }
     else throw new Exception('Uncategorized data');
   }, $X);
+
   return count($Y) === 1 ? $Y[0] : $Y;
 }
+
 $result = mapFun(function($n) {
   return $n + 1;
 }, ['skip' => ["string"]], 1,"k", [1, 2],[[1,2]],['a' => 1]);
+
 print_r($result);
