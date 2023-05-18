@@ -1,5 +1,4 @@
 <?php
-
 function mapFun($fun, $options = [], ...$X) {
   $skip = isset($options['skip']) ? $options['skip'] : [];
   $key = isset($options['key']) ? $options['key'] : false;
@@ -18,23 +17,15 @@ function mapFun($fun, $options = [], ...$X) {
         $skipPrimitives[] = $element;
       }
     }
-    if (in_array(gettype($x), $skipPrimitives) || in_array($x, $skipPrimitives)) {
-      return $x;
-    }
-    if ($x === null) {
-      return $fun(null);
-    }
-    if (in_array(gettype($x), ['integer', 'double', 'boolean', 'string'])) {
-      return $fun($x);
-    }
+    if (in_array(gettype($x), $skipPrimitives) || in_array($x, $skipPrimitives))return $x;
+    if ($x === null)return $fun(null);
+    if (in_array(gettype($x), ['integer', 'double', 'boolean', 'string']))return $fun($x);
     if (is_array($x)) {
       return array_map(function($n) use ($fun) {
         return mapFun($fun, [], $n);
       }, $x);
     }
-    if ($x instanceof Set) {
-      return new Set(mapFun($fun, [], ...$x));
-    }
+    if ($x instanceof Set)return new Set(mapFun($fun, [], ...$x));
     if ($x instanceof Map) {
       return new Map(array_map(function($n) use ($fun, $key, $value) {
         return [
@@ -55,16 +46,11 @@ function mapFun($fun, $options = [], ...$X) {
         return $carry;
       }, []);
     }
-    else {
-      throw new Exception('Uncategorized data');
-    }
+    else throw new Exception('Uncategorized data');
   }, $X);
-
   return count($Y) === 1 ? $Y[0] : $Y;
 }
-
 $result = mapFun(function($n) {
   return $n + 1;
-}, ['skip' => ["string", "integer", null, 'undefined']], 1);
-
+}, ['skip' => ["string"]], 1,"k", [1, 2],[[1,2]],['a' => 1]);
 print_r($result);
