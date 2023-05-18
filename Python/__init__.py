@@ -28,11 +28,8 @@ def mapFun(fun, options={}, *X):
     return [mapRecursive(x) for x in X]
 
 
-
 # Example
 def square(x):
     return x ** 2
-
-
 result = mapFun(square, {}, 1, 'hello', [2, 3], {4: 'world'})
 print(result)
