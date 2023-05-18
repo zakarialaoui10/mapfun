@@ -4,7 +4,7 @@ const mapFun = (fun, { skip = [], key = false, value = true } = {}, ...X) => {
       const skipPrimitives = [];
       const skipObjects = [];
       skip.forEach((element) =>(typeof element==="object"&&element !==null)?skipObjects.push(element):skipPrimitives.push(element));
-        if(skipPrimitives.includes(typeof x)) return x;
+        if(skipPrimitives.includes(typeof x)||skipPrimitives.includes(x)) return x;
         if(skipObjects.some(n=>x instanceof n))return x;
 
     if (x === null) return fun(null);
@@ -33,4 +33,4 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined') {
   module.exports = { mapFun };
 }
 a=new Map([["a",1],["b",2]]);
-console.log(mapFun(n=>n+1,{skip:["string","number"]},1,2,a,"k",[1,2],null))
+console.log(mapFun(n=>n+1,{skip:["string","number",null,undefined]},1,2,a,"k",[1,2],null,undefined,NaN))
