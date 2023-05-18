@@ -10,8 +10,8 @@ npm install @ziko/mapFun
 ### arguments
 |arg|Description|
 |--|--|
-|`fun`|the mapping function that will be applied to each element in the input array.|
-|`...X`|the elements to be mapped|
+|`fun` |The mapping function that will be applied to each element in the input array.|
+|`...X`|The elements to be mapped|
 ### Examples 
 ```javascript
 console.log(
