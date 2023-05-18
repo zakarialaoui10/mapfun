@@ -1,7 +1,13 @@
-def mapFun(fun, options, *X):
-    skip=[str]
-    key=False
-    value=True
+def mapFun(fun, options={}, *X):
+    if 'skip' in options:
+        skip=options["skip"]
+    else : skip=[str]
+    if 'key' in options:
+        key=options["key"]
+    else : key=False
+    if 'value' in options:
+        value=options["value"]
+    else : value=True
     def mapRecursive(x):
         if isinstance(skip, list) and (type(x) in skip or x in skip):
             return x
@@ -28,5 +34,5 @@ def square(x):
     return x ** 2
 
 
-result = mapFun(square, {'skip': [str]}, 1, 'hello', [2, 3], {4: 'world'})
+result = mapFun(square, {}, 1, 'hello', [2, 3], {4: 'world'})
 print(result)
