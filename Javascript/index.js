@@ -1,7 +1,7 @@
 const mapFun = (fun, { skip = [], key = false, value = true } = {}, ...X) => {
   const Y = X.map((x) => {
     if (typeof skip === 'string' && typeof x === skip) return x;
-    if(skip instanceof Array && skip.includes(typeof x))return x;
+    if (skip instanceof Array && skip.includes(typeof x))return x;
     if (x === null) return fun(null);
     if (['number', 'string', 'boolean', 'bigint', 'undefined'].includes(typeof x)) return fun(x);
     if (x instanceof Array) return x.map((n) => mapFun(fun,{},n));
