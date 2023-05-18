@@ -1,1 +1,6 @@
-
+{
+    "name": "vendor/mapFun",
+    "description": "MapFun library",
+    "type": "library",
+    "license": "MIT",
+}
