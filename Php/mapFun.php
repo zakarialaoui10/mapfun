@@ -19,7 +19,7 @@ function mapFun($fun, $options = [], ...$X) {
     if (is_object($x)) {
       return array_reduce(array_map(function($KEY, $VALUE) use ($fun, $key, $value) {
         return [
-          $key ? mapFun($fun, [], $KEY) : $KEY,
+          $KEY,
           $value ? mapFun($fun, [], $VALUE) : $VALUE,
         ];
       }, array_keys(get_object_vars($x)), array_values(get_object_vars($x))), function($carry, $item) {
@@ -32,5 +32,3 @@ function mapFun($fun, $options = [], ...$X) {
   }, $X);
   return count($Y) === 1 ? $Y[0] : $Y;
 }
-
-print_r($result);
