@@ -6,7 +6,6 @@ const mapFun = (fun, { skip = [], key = false, value = true } = {}, ...X) => {
       skip.forEach((element) =>(typeof element==="object"&&element !==null)?skipObjects.push(element):skipPrimitives.push(element));
         if(skipPrimitives.includes(typeof x)||skipPrimitives.includes(x)) return x;
         if(skipObjects.some(n=>x instanceof n))return x;
-
     if (x === null) return fun(null);
     if (['number', 'string', 'boolean', 'bigint', 'undefined'].includes(typeof x)) return fun(x);
     if (x instanceof Array) return x.map((n) => mapFun(fun,{},n));
@@ -24,7 +23,6 @@ const mapFun = (fun, { skip = [], key = false, value = true } = {}, ...X) => {
         value?mapFun(fun,{},VALUE):VALUE
       ])
     )
-    
     else throw new Error('Uncategorised data');
   });
     return Y.length === 1 ? Y[0] : Y;
