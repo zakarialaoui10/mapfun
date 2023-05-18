@@ -1,6 +1,7 @@
 const mapFun = (fun, { skip = [], key = false, value = true } = {}, ...X) => {
   const Y = X.map((x) => {
     if (typeof skip === 'string' && typeof x === skip) return x;
+    if(skip instanceof Array && skip.includes(typeof x))return x;
     if (x === null) return fun(null);
     if (['number', 'string', 'boolean', 'bigint', 'undefined'].includes(typeof x)) return fun(x);
     if (x instanceof Array) return x.map((n) => mapFun(fun,{},n));
@@ -27,4 +28,4 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined') {
   module.exports = { mapFun };
 }
 a=new Map([["a",1],["b",2]]);
-console.log(mapFun(n=>n+1,{},a))
+console.log(mapFun(n=>n+1,{skip:["string","number"]},1,2,a,"k"))
