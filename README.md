@@ -1,4 +1,7 @@
 # mapFun
+
+`mapFun` is a function that applies a mapping function to a variable number of input elements, with options to skip certain elements and selectively apply the mapping to keys and/or values of objects.
+
 - [Javascript](#javascript)
 - [Python](#python)
 
