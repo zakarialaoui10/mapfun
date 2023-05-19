@@ -16,6 +16,10 @@ const mapfunc = require("mapfunc");
 ```javascript
 import mapfunc from "mapfunc" 
 ```
+### unpkg
+```
+<script src="https://unpkg.com/mapfunc@latest/index.js"></script>
+```
 #### Syntax
 ```javascript
 mapfunc(fun,{skip,key,value},...X)
