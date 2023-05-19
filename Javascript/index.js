@@ -30,5 +30,3 @@ const mapFun = (fun, { skip = [], key = false, value = true } = {}, ...X) => {
 if (typeof module !== 'undefined' && typeof exports !== 'undefined') {
   module.exports = { mapFun };
 }
-a=new Map([["a",1],["b",2]]);
-console.log(mapFun(n=>n+1,{skip:["string","number",null,undefined]},1,2,a,"k",[1,2],null,undefined,NaN))
