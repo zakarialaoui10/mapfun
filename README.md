@@ -108,7 +108,7 @@ console.log(sin(0,PI/4,[0,PI/6,PI/4,{x:PI/8,y:PI/12}]))
 ## Python ( Not published yet)
 ### Install 
 ```bash
-pip install @ziko/mapfunc
+pip install mapfunc
 ```
 ### Examples 
 ```python
