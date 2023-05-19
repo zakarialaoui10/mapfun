@@ -1,5 +1,5 @@
 <?php
-function mapfunc($fun, $options = [], ...$X) {
+function mapfun($fun, $options = [], ...$X) {
   $skip = isset($options['skip']) ? $options['skip'] : [];
   $key = isset($options['key']) ? $options['key'] : false;
   $value = isset($options['value']) ? $options['value'] : true; 
@@ -13,14 +13,14 @@ function mapfunc($fun, $options = [], ...$X) {
     if (in_array(gettype($x), ['integer', 'double', 'boolean', 'string']))return $fun($x);
     if (is_array($x)) {
       return array_map(function($n) use ($fun) {
-        return mapfunc($fun, [], $n);
+        return mapfun($fun, [], $n);
       }, $x);
     }
     if (is_object($x)) {
       return array_reduce(array_map(function($KEY, $VALUE) use ($fun, $key, $value) {
         return [
           $KEY,
-          $value ? mapfunc($fun, [], $VALUE) : $VALUE,
+          $value ? mapfun($fun, [], $VALUE) : $VALUE,
         ];
       }, array_keys(get_object_vars($x)), array_values(get_object_vars($x))), function($carry, $item) {
         [$KEY, $VALUE] = $item;
