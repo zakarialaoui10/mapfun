@@ -16,7 +16,7 @@ const mapfunc = require("mapfunc");
 ```javascript
 import mapfunc from "mapfunc" 
 ```
-##### Syntax
+#### Syntax
 ```javascript
 mapfunc(fun,{skip,key,value},...X)
 ```
