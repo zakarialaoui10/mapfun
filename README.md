@@ -4,7 +4,7 @@
 
 - The `mapfunc` function has been developed in JavaScript and Python, offering the same functionality in different programming languages.
   - [Javascript](https://github.com/zakarialaoui10/mapfunc/tree/main/Javascript#readme)
-  - [Python](https://github.com/zakarialaoui10/mapfunc/tree/main/Python#readme)
+  - [Python](https://github.com/zakarialaoui10/mapfunc/tree/main/Python#readme) (Not published yet)
 
 # License 
 This projet is licensed under the terms of MIT License .<br>
