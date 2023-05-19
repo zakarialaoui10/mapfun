@@ -15,7 +15,7 @@ mapFun(fun,{skip,key,value},...X)
 ## Javascript 
 ### Install 
 ```bash
-npm install @ziko/mapFun
+npm install mapfunjs 
 ```
 
 ### Arguments
@@ -115,3 +115,7 @@ print(mapFun(lambda a : a + 5,{},{"a":1,"b":2,"c":3}))
 print(mapFun(lambda x:x+1,{},1,2,3,[1,2]))
 print(mapFun(lambda x:x+1,{},1,2,3,[1,2]))
 ```
+
+# License 
+This projet is licensed under the terms of MIT License .<br>
+<img src="https://img.shields.io/github/license/zakarialaoui10/zikojs?color=rgb%2820%2C21%2C169%29">
