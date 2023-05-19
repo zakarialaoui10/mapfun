@@ -15,7 +15,7 @@ mapFun(fun,{skip,key,value},...X)
 ## Javascript 
 ### Install 
 ```bash
-npm install @ziko/mapFun
+npm install mapFun
 ```
 
 ### Arguments
@@ -91,27 +91,4 @@ console.log(sin(0,PI/4,[0,PI/6,PI/4,{x:PI/8,y:PI/12}]))
  /* Expected log 
    Map { 'a1' => 1, 'b1' => 2 }
  */
-```
-## Python 
-### Install 
-```bash
-pip install @ziko/mapFun
-```
-### Examples 
-```python
-print(mapFun(lambda a : a + 1,{},4))
-# Expected return : 5
-print(mapFun(lambda a : a + 1.0,{},4.2))
-# Expected return : 5.2
-print(mapFun(lambda a : len(a),{},"Ziko"))
-# Expected return : 4
-print(mapFun(lambda a : a + 5,{},[1, 2, 3, [4]]))
-# Expected return : [6,7,8,[9]]
-print(mapFun(lambda a : a + 5,range(0,10)))
-print(mapFun(lambda a : a + 5,{},(1, 2, 3, [4])))
-print(mapFun(lambda a : a + 5,{},{1,2,3}))
-print(mapFun(lambda a : a + 5,frozenset({1,2,3})))
-print(mapFun(lambda a : a + 5,{},{"a":1,"b":2,"c":3}))
-print(mapFun(lambda x:x+1,{},1,2,3,[1,2]))
-print(mapFun(lambda x:x+1,{},1,2,3,[1,2]))
 ```
