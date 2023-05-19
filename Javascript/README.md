@@ -14,7 +14,7 @@ npm install mapfunc
 ```
 ### Import 
 
-|||
+|type|syntax|
 |-|-|
 |commonjs|`const mapfunc = require("mapfunc")`|
 |es module|`import mapfunc from "mapfunc" `|
