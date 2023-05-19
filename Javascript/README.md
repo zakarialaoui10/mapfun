@@ -8,14 +8,9 @@
 ```javascript
 mapFun(fun,{skip,key,value},...X)
 ```
-
-- [Javascript](#javascript)
-- [Python](#python)
-
-## Javascript 
 ### Install 
 ```bash
-npm install mapFun
+npm install ziko-mapfun
 ```
 
 ### Arguments
