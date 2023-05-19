@@ -9,9 +9,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zakarialaoui10/mapFun.git"
+    "url": "git+https://github.com/zakarialaoui10/mapfunc.git"
   },
-  "homepage": "https://github.com/zakarialaoui10/mapFun#javascript",
+  "homepage": "https://github.com/zakarialaoui10/mapfunc#javascript",
   "keywords": [
     "mapfunc",
     "map",
@@ -24,6 +24,6 @@
   "author": "zakaria elalaoui",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zakarialaoui10/mapFun/issues"
+    "url": "https://github.com/zakarialaoui10/mapfunc/issues"
   }
 }
