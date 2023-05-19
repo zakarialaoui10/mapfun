@@ -1,4 +1,4 @@
-# mapFun
+# mapfun
 
 - `mapfun` is a function that applies a mapping function to an infinite number of input elements, with options to skip certain elements and selectively apply the mapping to keys and/or values of objects.
 
@@ -10,7 +10,7 @@ mapFun(fun,{skip,key,value},...X)
 ```
 ### Install 
 ```bash
-npm install mapfun
+npm install mapfunjs
 ```
 
 ### Arguments
