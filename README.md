@@ -1,6 +1,7 @@
 |Problem|Solution|
 |-|-|
 |![problem](./Assets/problem.png)|![problem](./Assets/magic.png)|
+The magic function called `mapfunc`
 # mapfunc
 - `mapfunc` is a function that applies a mapping function to an infinite number of input elements, with options to skip certain elements and selectively apply the mapping to keys and/or values of objects.
 
