@@ -6,7 +6,7 @@
 
 ##### Syntax
 ```javascript
-mapFun(fun,{skip,key,value},...X)
+mapfun(fun,{skip,key,value},...X)
 ```
 ### Install 
 ```bash
@@ -23,7 +23,7 @@ npm install mapfun
 ### Examples 
 ```javascript
 console.log(
-  mapFun(n => n + 2,{}, 1,"a", [1, 2, 3], true, {
+  mapfun(n => n + 2,{}, 1,"a", [1, 2, 3], true, {
     a: 2,
     b: 3,
     c: { d: 3, e: [1, 3, 4] },
@@ -48,7 +48,7 @@ console.log(
 ```
 ```javascript
 const PI=Math.PI
-const sin=(...args)=>mapFun(Math.sin,{},...args)
+const sin=(...args)=>mapfun(Math.sin,{},...args)
 console.log(sin(0,PI/4,[0,PI/6,PI/4,{x:PI/8,y:PI/12}]))
 /* Expected log
 [
@@ -70,19 +70,19 @@ console.log(sin(0,PI/4,[0,PI/6,PI/4,{x:PI/8,y:PI/12}]))
 ```javascript
  const A=new Map([["a",1],["b",2]]);
  // Map { 'a' => 1, 'b' => 2 }
- console.log(mapFun(n=>n+1,{},A));
+ console.log(mapfun(n=>n+1,{},A));
  /* Expected log 
    Map { 'a' => 2, 'b' => 3 }
  */
- console.log(mapFun(n=>n+1,{key:true},A));
+ console.log(mapfun(n=>n+1,{key:true},A));
  /* Expected log 
    Map { 'a1' => 2, 'b1' => 3 }
  */
- console.log(mapFun(n=>n+1,{value:false},A));
+ console.log(mapfun(n=>n+1,{value:false},A));
  /* Expected log 
    Map { 'a' => 1, 'b' => 2 }
  */
- console.log(mapFun(n=>n+1,{key:true,value:false},A));
+ console.log(mapfun(n=>n+1,{key:true,value:false},A));
  /* Expected log 
    Map { 'a1' => 1, 'b1' => 2 }
  */
