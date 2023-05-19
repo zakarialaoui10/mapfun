@@ -12,6 +12,15 @@ mapfunc(fun,{skip,key,value},...X)
 ```bash
 npm install mapfunc
 ```
+### Import 
+
+|||
+|-|-|
+|commonjs|`const mapfunc = require("mapfunc")`|
+|es module|`import mapfunc from "mapfunc" `|
+```
+const mapfunc=require("map
+```
 
 ### Arguments
 - `fun` : The mapping function that will be applied to each element in the input elements.</br>
