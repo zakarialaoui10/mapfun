@@ -1,3 +1,7 @@
+/*
+Developped by zakaria elaloui
+Github : https://github.com/zakarialaoui10
+*/
 const mapfunc = (fun, { skip = [], key = false, value = true } = {}, ...X) => {
   const Y = X.map((x) => {
     if (typeof skip === 'string'||[null,undefined].includes(skip))skip=[skip];
