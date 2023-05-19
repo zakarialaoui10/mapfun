@@ -1,4 +1,4 @@
-def mapfunc(fun, options={}, *X):
+def mapfun(fun, options={}, *X):
     if 'skip' in options:
         skip=options["skip"]
     else : skip=[str]
@@ -26,10 +26,3 @@ def mapfunc(fun, options={}, *X):
         else:
             raise ValueError('Uncategorized data')
     return [mapRecursive(x) for x in X]
-
-
-# Example
-def square(x):
-    return x ** 2
-result = mapfunc(square, {}, 1, 'hello', [2, 3], {4: 'world'})
-print(result)
