@@ -1,8 +1,8 @@
 # mapFun
 
-- `mapFun` is a function that applies a mapping function to an infinite number of input elements, with options to skip certain elements and selectively apply the mapping to keys and/or values of objects.
+- `mapfun` is a function that applies a mapping function to an infinite number of input elements, with options to skip certain elements and selectively apply the mapping to keys and/or values of objects.
 
-- The `mapFun` function has been developed in JavaScript and Python, offering the same functionality in different programming languages.
+- The `mapfun` function has been developed in JavaScript and Python, offering the same functionality in different programming languages.
 
 ##### Syntax
 ```javascript
