@@ -1,0 +1,5 @@
+# Example
+def square(x):
+    return x ** 2
+result = mapfun(square, {}, 1, 'hello', [2, 3], {4: 'world'})
+print(result)
