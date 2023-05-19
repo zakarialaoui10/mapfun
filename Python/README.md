@@ -1,7 +1,7 @@
 ## Python ( Not published yet)
 ### Install 
 ```bash
-pip install @ziko/mapfunc
+pip install mapfunc
 ```
 ### Examples 
 ```python
