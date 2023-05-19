@@ -17,7 +17,7 @@ const mapfunc = require("mapfunc");
 import mapfunc from "mapfunc" 
 ```
 ### unpkg
-```
+``` html
 <script src="https://unpkg.com/mapfunc@latest/index.js"></script>
 ```
 #### Syntax
