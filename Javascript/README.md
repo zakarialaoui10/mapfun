@@ -8,11 +8,11 @@
 npm install mapfunc
 ```
 ### Import 
- - common js : 
+ - #### common js : 
 ```javascript
 const mapfunc = require("mapfunc");
 ```
- - es module
+ - #### es module
 ```javascript
 import mapfunc from "mapfunc" 
 ```
