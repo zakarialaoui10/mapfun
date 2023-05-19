@@ -1,5 +1,6 @@
 # Problem
-![](./Assets/problem.png)
+![problem](./Assets/problem.png)
+# Solution
 # mapfunc
 - `mapfunc` is a function that applies a mapping function to an infinite number of input elements, with options to skip certain elements and selectively apply the mapping to keys and/or values of objects.
 
