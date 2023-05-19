@@ -15,7 +15,7 @@ mapfun(fun,{skip,key,value},...X)
 ## Javascript 
 ### Install 
 ```bash
-npm install mapfunjs 
+npm install mapfunc 
 ```
 
 ### Arguments
