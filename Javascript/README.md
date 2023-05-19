@@ -3,22 +3,23 @@
 - `mapfunc` is a function that applies a mapping function to an infinite number of input elements, with options to skip certain elements and selectively apply the mapping to keys and/or values of objects.
 
 - The `mapfunc` function has been developed in JavaScript and Python, offering the same functionality in different programming languages.
-
-##### Syntax
-```javascript
-mapfunc(fun,{skip,key,value},...X)
-```
 ### Install 
 ```bash
 npm install mapfunc
 ```
 ### Import 
-```const mapfunc = require("mapfunc")```
-``` import mapfunc from "mapfunc" ```
+ - common js : 
+```javascript
+const mapfunc = require("mapfunc");
 ```
-const mapfunc=require("map
+ - es module
+```javascript
+import mapfunc from "mapfunc" 
 ```
-
+##### Syntax
+```javascript
+mapfunc(fun,{skip,key,value},...X)
+```
 ### Arguments
 - `fun` : The mapping function that will be applied to each element in the input elements.</br>
 - `...X` :The elements to be mapped . </br>
