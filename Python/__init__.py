@@ -1,4 +1,4 @@
-def mapFun(fun, options={}, *X):
+def mapfunc(fun, options={}, *X):
     if 'skip' in options:
         skip=options["skip"]
     else : skip=[str]
@@ -31,5 +31,5 @@ def mapFun(fun, options={}, *X):
 # Example
 def square(x):
     return x ** 2
-result = mapFun(square, {}, 1, 'hello', [2, 3], {4: 'world'})
+result = mapfunc(square, {}, 1, 'hello', [2, 3], {4: 'world'})
 print(result)
