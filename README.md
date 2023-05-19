@@ -15,7 +15,20 @@ mapfunc(fun,{skip,key,value},...X)
 ## Javascript 
 ### Install 
 ```bash
-npm install mapfuncc 
+npm install mapfunc
+```
+### Import 
+ - #### common js : 
+```javascript
+const mapfunc = require("mapfunc");
+```
+ - #### es module
+```javascript
+import mapfunc from "mapfunc" 
+```
+### unpkg
+``` html
+<script src="https://unpkg.com/mapfunc@latest/index.js"></script>
 ```
 
 ### Arguments
