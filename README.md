@@ -1,4 +1,7 @@
-# Problem
+|||
+|-|-|
+|![problem](./Assets/problem.png)|![problem](./Assets/magic.png)|
+
 ![problem](./Assets/problem.png)
 # Solution
 # mapfunc
