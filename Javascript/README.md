@@ -1,28 +1,28 @@
-# mapfunc
+# mapfun
 
-- `mapfunc` is a function that applies a mapping function to an infinite number of input elements, with options to skip certain elements and selectively apply the mapping to keys and/or values of objects.
+- `mapfun` is a function that applies a mapping function to an infinite number of input elements, with options to skip certain elements and selectively apply the mapping to keys and/or values of objects.
 
-- The `mapfunc` function has been developed in JavaScript and Python, offering the same functionality in different programming languages.
+- The `mapfun` function has been developed in JavaScript and Python, offering the same functionality in different programming languages.
 ## Install 
 ```bash
-npm install mapfunc
+npm install mapfun
 ```
 ### Import 
  - #### common js : 
 ```javascript
-const mapfunc = require("mapfunc");
+const mapfun = require("mapfun");
 ```
  - #### es module
 ```javascript
-import mapfunc from "mapfunc" 
+import mapfun from "mapfun" 
 ```
 ### unpkg
 ``` html
-<script src="https://unpkg.com/mapfunc@latest/index.js"></script>
+<script src="https://unpkg.com/mapfun@latest/index.js"></script>
 ```
 #### Syntax
 ```javascript
-mapfunc(fun,{skip,key,value},...X)
+mapfun(fun,{skip,key,value},...X)
 ```
 ### Arguments
 - `fun` : The mapping function that will be applied to each element in the input elements.</br>
@@ -34,7 +34,7 @@ mapfunc(fun,{skip,key,value},...X)
 ### Examples 
 ```javascript
 console.log(
-  mapfunc(n => n + 2,{}, 1,"a", [1, 2, 3], true, {
+  mapfun(n => n + 2,{}, 1,"a", [1, 2, 3], true, {
     a: 2,
     b: 3,
     c: { d: 3, e: [1, 3, 4] },
@@ -59,7 +59,7 @@ console.log(
 ```
 ```javascript
 const PI=Math.PI
-const sin=(...args)=>mapfunc(Math.sin,{},...args)
+const sin=(...args)=>mapfun(Math.sin,{},...args)
 console.log(sin(0,PI/4,[0,PI/6,PI/4,{x:PI/8,y:PI/12}]))
 /* Expected log
 [
@@ -81,19 +81,19 @@ console.log(sin(0,PI/4,[0,PI/6,PI/4,{x:PI/8,y:PI/12}]))
 ```javascript
  const A=new Map([["a",1],["b",2]]);
  // Map { 'a' => 1, 'b' => 2 }
- console.log(mapfunc(n=>n+1,{},A));
+ console.log(mapfun(n=>n+1,{},A));
  /* Expected log 
    Map { 'a' => 2, 'b' => 3 }
  */
- console.log(mapfunc(n=>n+1,{key:true},A));
+ console.log(mapfun(n=>n+1,{key:true},A));
  /* Expected log 
    Map { 'a1' => 2, 'b1' => 3 }
  */
- console.log(mapfunc(n=>n+1,{value:false},A));
+ console.log(mapfun(n=>n+1,{value:false},A));
  /* Expected log 
    Map { 'a' => 1, 'b' => 2 }
  */
- console.log(mapfunc(n=>n+1,{key:true,value:false},A));
+ console.log(mapfun(n=>n+1,{key:true,value:false},A));
  /* Expected log 
    Map { 'a1' => 1, 'b1' => 2 }
  */
