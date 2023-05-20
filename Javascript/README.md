@@ -113,7 +113,7 @@ console.log(sin(0,PI/4,[0,PI/6,PI/4,{x:PI/8,y:PI/12}]))
 |`Null`|✅|
 |`NaN`|✅|
 |`Undefined`|✅|
-|`Bigint`|✅|
+|`BigInt`|✅|
 |`Array`|✅|
 |`Object`|✅|
 |`Map`|✅|
@@ -122,6 +122,9 @@ console.log(sin(0,PI/4,[0,PI/6,PI/4,{x:PI/8,y:PI/12}]))
 |`WeakSet`|✅|
 |`ArrayBuffer`|✅|
 |`Symbol`|❌|
+# ⚠️
+ - `mapfun` with `ArrayBuffer` returns `Array` not `ArrayBuffer` .
+ - BigInt and Number are not interchangeable, and you cannot directly perform arithmetic operations between them .
 # License 
 This projet is licensed under the terms of MIT License .<br>
 <img src="https://img.shields.io/github/license/zakarialaoui10/zikojs?color=rgb%2820%2C21%2C169%29">
