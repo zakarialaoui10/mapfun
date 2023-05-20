@@ -2,7 +2,7 @@
 |-|-|
 |![problem](../assets/problem.png)|![problem](../assets/solution.png)|
 
-The magic function called `mapfunc`
+The magic function called `mapfun`
 
 # mapfun
 
