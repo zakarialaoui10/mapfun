@@ -106,7 +106,7 @@ console.log(sin(0,PI/4,[0,PI/6,PI/4,{x:PI/8,y:PI/12}]))
 ```
 # Supported datatypes
 |Datatype|Support|
-|-|-|-|
+|-|-|
 |`Number`|✅|
 |`String`|✅|
 |`Boolean`|✅|
