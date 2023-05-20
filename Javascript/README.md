@@ -107,17 +107,20 @@ console.log(sin(0,PI/4,[0,PI/6,PI/4,{x:PI/8,y:PI/12}]))
 # Supported datatypes
 |Datatype|Support|return type|
 |-|-|-|
-|`number`|||
-|`string`|||
-|`boolean`|||
-|`null`|||
+|`Number`|||
+|`String`|||
+|`Boolean`|||
+|`Null`|||
 |`NaN`|||
-|`undefined`|||
+|`Undefined`|||
+|`Bigint`||
 |`Array`|||
 |`Object`|||
 |`WeakMap`|||
 |`Set`|||
 |`WeakSet`|||
+|`ArrayBuffer`|||
+|`Symbol`|||
 
 # License 
 This projet is licensed under the terms of MIT License .<br>
