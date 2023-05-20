@@ -105,24 +105,23 @@ console.log(sin(0,PI/4,[0,PI/6,PI/4,{x:PI/8,y:PI/12}]))
  */
 ```
 # Supported datatypes
-|Datatype|Support|Return type|
+|Datatype|Support|
 |-|-|-|
-|`Number`|✅|`any`|
-|`String`|✅|`any`|
-|`Boolean`|✅|`any`|
-|`Null`|✅|`any`|
-|`NaN`|✅|`any`|
-|`Undefined`|✅|`any`|
-|`Bigint`|✅|`any`|
-|`Array`|✅|`any`|
-|`Object`|✅|`any`|
-|`Map`|✅|`Map`|
-|`WeakMap`|✅|`WeakMap`|
-|`Set`|✅|`Set`|
-|`WeakSet`|✅|`WeakSet`|
-|`ArrayBuffer`|✅|`Array`|
-|`Symbol`|❌||
-`any`
+|`Number`|✅|
+|`String`|✅|
+|`Boolean`|✅|
+|`Null`|✅|
+|`NaN`|✅|
+|`Undefined`|✅|
+|`Bigint`|✅|
+|`Array`|✅|
+|`Object`|✅|
+|`Map`|✅|
+|`WeakMap`|✅|
+|`Set`|✅|
+|`WeakSet`|✅|
+|`ArrayBuffer`|✅|
+|`Symbol`|❌|
 # License 
 This projet is licensed under the terms of MIT License .<br>
 <img src="https://img.shields.io/github/license/zakarialaoui10/zikojs?color=rgb%2820%2C21%2C169%29">
