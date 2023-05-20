@@ -1,6 +1,6 @@
 |Problem|Solution|
 |-|-|
-|![problem](./assets/problem.png)|![problem](./assets/solution.png)|
+|![problem](./Javascript/assets/problem.png)|![problem](./Javascript/assets/solution.png)|
 
 The magic function called `mapfunc`
 # mapfun
