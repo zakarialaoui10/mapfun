@@ -1,6 +1,6 @@
 |Problem|Solution|
 |-|-|
-|![problem](https://github.com/zakarialaoui10/mapfun/blob/cbedc3733eda2d26bf3854bb401aea21afc49ee7/Javascript/assets/problem.png?raw=true)|![solution](./assets/solution.png)|
+|![problem](https://github.com/zakarialaoui10/mapfun/blob/cbedc3733eda2d26bf3854bb401aea21afc49ee7/Javascript/assets/problem.png?raw=true)|![solution](https://github.com/zakarialaoui10/mapfun/blob/main/Javascript/assets/solution.png?raw=true)|
 
 The magic function called `mapfun`
 
