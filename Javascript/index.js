@@ -12,9 +12,12 @@ const mapfun = (fun, { skip = [], key = false, value = true } = {}, ...X) => {
         if(skipObjects.some(n=>x instanceof n))return x;
     if (x === null) return fun(null);
     if (['number', 'string', 'boolean', 'bigint', 'undefined'].includes(typeof x)) return fun(x);
+    if (typeof(x)==="symbol") throw new Error('symbols are not supported yet');
     if (x instanceof Array) return x.map((n) => mapfun(fun,{},n));
     if (ArrayBuffer.isView(x)) return Array.from(x).map((n) => fun(n));
     if (x instanceof Set) return new Set(mapfun(fun,{},...[...x]));
+    if (x instanceof WeakSet) throw new Error('WeakSets not supported yet');
+    if (x instanceof WeakMap) throw new Error('WeakMaps not supported yet');
     if (x instanceof Map) return new Map([...x].map(n =>{
         return [
             key?mapfun(fun,{},n[0]):n[0],
@@ -34,3 +37,4 @@ const mapfun = (fun, { skip = [], key = false, value = true } = {}, ...X) => {
 if (typeof module !== 'undefined' && typeof exports !== 'undefined') {
   module.exports = mapfun ;
 }
+console.log(mapfun(a=>a+1,{},new WeakSet([{a:1}])))
