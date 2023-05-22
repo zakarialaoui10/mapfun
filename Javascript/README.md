@@ -104,6 +104,13 @@ console.log(sin(0,PI/4,[0,PI/6,PI/4,{x:PI/8,y:PI/12}]))
    Map { 'a1' => 1, 'b1' => 2 }
  */
 ```
+```javascript
+const pow=(...x)=>{
+n=x.pop();
+   return mapfun(a=>Math.pow(a,n),{},...x)
+}
+console.log(pow(1,2,{y:2},3))
+```
 # Supported datatypes
 |Datatype|Support|
 |-|-|
