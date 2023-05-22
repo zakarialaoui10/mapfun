@@ -37,4 +37,3 @@ const mapfun = (fun, { skip = [], key = false, value = true } = {}, ...X) => {
 if (typeof module !== 'undefined' && typeof exports !== 'undefined') {
   module.exports = mapfun ;
 }
-console.log(mapfun(a=>a+1,{},new WeakSet([{a:1}])))
