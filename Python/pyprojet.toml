@@ -4,7 +4,7 @@ version = "0.9.0"
 authors = [
   { name="zakaria elalaoui", email="" },
 ]
-description = "A small example package"
+description = "A function that applies a mapping function to an infinite number of input elements, with options to skip certain elements and selectively apply the mapping to keys and/or values of objects.e"
 readme = "README.md"
 requires-python = ">=3.7"
 classifiers = [
@@ -14,5 +14,5 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/pypa/sampleproject"
-"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
+"Homepage" = "https://github.com/zakarialaoui10/mapfun#python"
+"Bug Tracker" = "https://github.com/zakarialaoui10/mapfun/issues"
