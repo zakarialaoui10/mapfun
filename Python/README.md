@@ -1,4 +1,4 @@
-## Python ( Not published yet)
+## Python 
 ### Install 
 ```bash
 pip install mapfun
