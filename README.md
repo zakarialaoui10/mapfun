@@ -16,6 +16,11 @@ The magic function called `mapfunc`
 |Javascript|Python|
 |-|-|
 |`mapfun(callback,{},...args)`|`mapfun(callback,{},*args)`|
+# Install 
+|Javascript|Python|
+|-|-|
+|`npm i mapfun`|`pip install mapfun`|
+
 # Supported Datatypes
 |Javascript|Support|Python|Support|
 |---|-|---|-|
