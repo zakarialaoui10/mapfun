@@ -11,6 +11,10 @@ The magic function called `mapfunc`
     * [NPM](https://www.npmjs.com/package/mapfun)
   - [Python](https://github.com/zakarialaoui10/mapfun/tree/main/Python#readme)
     * [PyPI](https://pypi.org/project/mapfun/)
+# Syntax 
+|Javascript|Python|
+|-|-|
+|`mapfun(callback,{},...args)`|`mapfun(callback,{},*args)`|
 # Supported Datatypes
 |Javascript|Support|Python|Support|
 |---|-|---|-|
