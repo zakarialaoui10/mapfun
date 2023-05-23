@@ -38,18 +38,18 @@ print(mapfun(lambda x:x+1,{},1,2,3,[1,2]))
 |Datatype|Support|
 |---|-|
 |`int`|✅|
-|`float`|✅|
-|`Boolean`|✅|
 |`str`|✅|
+|`Boolean`|✅|
+|`float`|✅|
+|`None`|✅|
+|`memoryview`|✅|
+|`list`|✅|
+|`object`|✅|
+|`dict`|✅|
+|`set`|✅|
+|`tuple`|✅|
 |`bytes`|✅|
 |`bytearray`|✅|
-|`memoryview`|✅|
-|`None`|✅|
-|`object`|✅|
-|`list`|✅|
-|`set`|✅|
-|`dict`|✅|
-|`tuple`|✅|
 |`range`|✅|
 
 # Alternatives
