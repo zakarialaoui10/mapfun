@@ -51,6 +51,7 @@ print(mapfun(lambda x:x+1,{},1,2,3,[1,2]))
 |`bytes`|✅|
 |`bytearray`|✅|
 |`range`|✅|
+|`complex`|❌|
 
 # Alternatives
 ## [Javascript](https://github.com/zakarialaoui10/mapfun/blob/main/Javascript/README.md)
