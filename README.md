@@ -11,7 +11,24 @@ The magic function called `mapfunc`
     * [NPM](https://www.npmjs.com/package/mapfun)
   - [Python](https://github.com/zakarialaoui10/mapfun/tree/main/Python#readme)
     * [PyPI](https://pypi.org/project/mapfun/)
-
+# Supported Datatypes
+|Javascript|Support|Python|Support|
+|---|-|---|-|
+|`Number`|✅|
+|`String`|✅|
+|`Boolean`|✅|
+|`Null`|✅|
+|`NaN`|✅|
+|`Undefined`|✅|
+|`BigInt`|✅|
+|`Array`|✅|
+|`Object`|✅|
+|`Map`|✅|
+|`WeakMap`|❌|
+|`Set`|✅|
+|`WeakSet`|❌|
+|`ArrayBuffer`|✅|
+|`Symbol`|❌|
 # License 
 This projet is licensed under the terms of MIT License .<br>
 <img src="https://img.shields.io/github/license/zakarialaoui10/zikojs?color=rgb%2820%2C21%2C169%29">
