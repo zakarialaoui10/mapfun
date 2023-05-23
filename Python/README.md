@@ -34,7 +34,8 @@ print(mapfun(lambda a : a + 5,{},{"a":1,"b":2,"c":3}))
 print(mapfun(lambda x:x+1,{},1,2,3,[1,2]))
 print(mapfun(lambda x:x+1,{},1,2,3,[1,2]))
 ```
-[Javascript version](https://github.com/zakarialaoui10/mapfun/blob/main/Javascript/README.md)
+# Alternatives
+## [Javascript](https://github.com/zakarialaoui10/mapfun/blob/main/Javascript/README.md)
 # License 
 This projet is licensed under the terms of MIT License .<br>
 <img src="https://img.shields.io/github/license/zakarialaoui10/zikojs?color=rgb%2820%2C21%2C169%29">
