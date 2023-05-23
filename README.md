@@ -19,8 +19,8 @@ The magic function called `mapfunc`
 |`Boolean`|✅|`Boolean`|✅|
 |`Null`|✅|`float`|✅|
 |`NaN`|✅|`None`|✅|
-|`Undefined`|✅|`str`|✅|
-|`BigInt`|✅|`memoryview`|✅|
+|`Undefined`|✅|`memoryview`|✅|
+|`BigInt`|✅|`complex`|❌|
 |`Array`|✅|`list`|✅|
 |`Object`|✅|`object`|✅|
 |`Map`|✅|`dict`|✅|
