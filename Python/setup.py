@@ -9,7 +9,7 @@ setup(
     description="mapfun",
     long_description_content_type="text/markdown",
     long_description=(parent / "README.md").read_text(),
-    packages = ['src.mapfun'],
+    packages = ['src'],
     keywords=['zikojs','python', 'map'],
     classifiers=[
         "Development Status :: 1 - Planning",
