@@ -5,6 +5,10 @@
 ```bash
 pip install mapfun
 ```
+### Import 
+```bash
+from mapfun import mapfun
+```
 ### Arguments
 - `fun` : The mapping function that will be applied to each element in the input elements.</br>
 - `...X` :The elements to be mapped . </br>
