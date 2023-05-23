@@ -35,11 +35,12 @@ print(mapfun(lambda x:x+1,{},1,2,3,[1,2]))
 print(mapfun(lambda x:x+1,{},1,2,3,[1,2]))
 ```
 # Supported Datatypes
+|Datatype|Support|
+|---|-|
 |`int`|✅|
 |`float`|✅|
 |`Boolean`|✅|
 |`str`|✅|
-|`NaN`|✅|
 |`bytes`|✅|
 |`bytearray`|✅|
 |`memoryview`|✅|
