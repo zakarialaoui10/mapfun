@@ -34,6 +34,23 @@ print(mapfun(lambda a : a + 5,{},{"a":1,"b":2,"c":3}))
 print(mapfun(lambda x:x+1,{},1,2,3,[1,2]))
 print(mapfun(lambda x:x+1,{},1,2,3,[1,2]))
 ```
+# Supported Datatypes
+|`int`|✅|
+|`float`|✅|
+|`Boolean`|✅|
+|`str`|✅|
+|`NaN`|✅|
+|`bytes`|✅|
+|`bytearray`|✅|
+|`memoryview`|✅|
+|`None`|✅|
+|`object`|✅|
+|`list`|✅|
+|`set`|✅|
+|`dict`|✅|
+|`tuple`|✅|
+|`range`|✅|
+
 # Alternatives
 ## [Javascript](https://github.com/zakarialaoui10/mapfun/blob/main/Javascript/README.md)
 # License 
