@@ -1,16 +1,14 @@
 from setuptools import setup
 from pathlib import Path
 VERSION = '0.0.2'
-DESCRIPTION = 'mapfun'
-this_directory = Path(__file__).parent
-LONG_DESCRIPTION = (this_directory / "README.md").read_text()
+parent = Path(__file__).parent
 setup(
     name="mapfun",
     version=VERSION,
     author="Zakaria Elalaoui",
-    description=DESCRIPTION,
+    description="mapfun",
     long_description_content_type="text/markdown",
-    long_description=LONG_DESCRIPTION,
+    long_description=(parent / "README.md").read_text(),
     packages = ['src.mapfun'],
     keywords=['python', 'map'],
     classifiers=[
