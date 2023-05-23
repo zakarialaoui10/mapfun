@@ -14,21 +14,22 @@ The magic function called `mapfunc`
 # Supported Datatypes
 |Javascript|Support|Python|Support|
 |---|-|---|-|
-|`Number`|✅|
-|`String`|✅|
-|`Boolean`|✅|
-|`Null`|✅|
-|`NaN`|✅|
-|`Undefined`|✅|
-|`BigInt`|✅|
-|`Array`|✅|
-|`Object`|✅|
-|`Map`|✅|
-|`WeakMap`|❌|
-|`Set`|✅|
-|`WeakSet`|❌|
-|`ArrayBuffer`|✅|
-|`Symbol`|❌|
+|`Number`|✅|`int`|✅|
+|`String`|✅|`str`|✅|
+|`Boolean`|✅|`Boolean`|✅|
+|`Null`|✅|`float`|✅|
+|`NaN`|✅|`None`|✅|
+|`Undefined`|✅|`str`|✅|
+|`BigInt`|✅|`memoryview`|✅|
+|`Array`|✅|`list`|✅|
+|`Object`|✅|`object`|✅|
+|`Map`|✅|`dict`|✅|
+|`Set`|✅|`set`|✅|
+|`WeakMap`|❌|`tuple`|✅|
+|`WeakSet`|❌|`bytes`|✅|
+|`ArrayBuffer`|✅|`bytearray`|✅|
+|`Symbol`|❌|`range`|✅|
+
 # License 
 This projet is licensed under the terms of MIT License .<br>
 <img src="https://img.shields.io/github/license/zakarialaoui10/zikojs?color=rgb%2820%2C21%2C169%29">
