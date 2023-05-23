@@ -132,6 +132,8 @@ console.log(pow(1,2,{y:2},3))
 # ⚠️
  - `mapfun` with `ArrayBuffer` returns `Array` not `ArrayBuffer` .
  - BigInt and Number are not interchangeable, and you cannot directly perform arithmetic operations between them .
+# Alternatives
+## [Python](https://github.com/zakarialaoui10/mapfun/blob/main/Python/README.md)
 # License 
 This projet is licensed under the terms of MIT License .<br>
 <img src="https://img.shields.io/github/license/zakarialaoui10/zikojs?color=rgb%2820%2C21%2C169%29">
