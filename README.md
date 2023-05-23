@@ -1,6 +1,7 @@
-|Problem|Solution|
-|-|-|
-|![problem](./Javascript/assets/problem.png)|![problem](./Javascript/assets/solution.png)|
+|Langage|Problem|Solution|
+|-|-|-|
+|Javascript|![problem](./Javascript/assets/problem.png)|![problem](./Javascript/assets/solution.png)|
+|Python|![problem](./Javascript/assets/problem.png)|![problem](./Javascript/assets/solution.png)|
 
 The magic function called `mapfunc`
 # mapfun
