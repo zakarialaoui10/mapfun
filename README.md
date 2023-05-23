@@ -9,7 +9,8 @@ The magic function called `mapfunc`
 - The `mapfun` function has been developed in JavaScript and Python, offering the same functionality in different programming languages.
   - [Javascript](https://github.com/zakarialaoui10/mapfun/tree/main/Javascript#readme)
     * [NPM](https://www.npmjs.com/package/mapfun)
-  - [Python](https://github.com/zakarialaoui10/mapfun/tree/main/Python#readme) (Not published yet)
+  - [Python](https://github.com/zakarialaoui10/mapfun/tree/main/Python#readme)
+    * [PyPI](https://pypi.org/project/mapfun/)
 
 # License 
 This projet is licensed under the terms of MIT License .<br>
