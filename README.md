@@ -22,7 +22,7 @@ The magic function called `mapfunc`
 |`npm i mapfun`|`pip install mapfun`|
 ### Arguments
 - `fun` : The mapping function that will be applied to each element in the input elements.</br>
-- `...X` javascripters or`*X` for pythonista :The elements to be mapped . </br>
+- `...X` for javascripters or`*X` for pythonista :The elements to be mapped . </br>
 - `{ skip , key , value }` : Object with three optional properties :
     * `skip` : specifies the elements to skip during the mapping process.
     * `key` : boolean flag indicating whether to apply the mapping function to the keys of objects or not. The default value is `false`
