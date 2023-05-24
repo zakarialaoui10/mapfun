@@ -1,9 +1,8 @@
 from setuptools import setup
 from pathlib import Path
-VERSION = '0.0.5'
 setup(
     name="mapfun",
-    version=VERSION,
+    version='0.0.5',
     author="Zakaria Elalaoui",
     description="mapfun",
     long_description_content_type="text/markdown",
