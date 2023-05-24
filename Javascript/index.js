@@ -20,8 +20,8 @@ const mapfun = (fun, { skip = [], key = false, value = true } = {}, ...X) => {
     if (x instanceof WeakMap) throw new Error('WeakMaps not supported yet');
     if (x instanceof Map) return new Map([...x].map(n =>{
         return [
-            key?mapfun(fun,{},n[0]):n[0],
-            value?mapfun(fun,{},n[1]):n[1],
+            key ? mapfun(fun,{},n[0]) : n[0],
+            value ? mapfun(fun,{},n[1]) : n[1],
             ]
     }));
     if (x instanceof Object) return Object.fromEntries(
