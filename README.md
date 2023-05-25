@@ -9,7 +9,7 @@ The magic function called `mapfunc`
 
 - The `mapfun` function has been developed in JavaScript and Python, offering the same functionality in different programming languages.
   - [Javascript](https://github.com/zakarialaoui10/mapfun/tree/main/Javascript#readme)
-    * [NPM](https://www.npmjs.com/package/mapfun)
+    * [NPM](https://www.npmjs.com/package/mapfun) 
   - [Python](https://github.com/zakarialaoui10/mapfun/tree/main/Python#readme)
     * [PyPI](https://pypi.org/project/mapfun/)
 # Syntax 
@@ -45,7 +45,9 @@ The magic function called `mapfunc`
 |`WeakSet`|❌|`bytes`|✅|
 |`ArrayBuffer`|✅|`bytearray`|✅|
 |`Symbol`|❌|`range`|✅|
-
+# Stats
+![npm downloads](https://img.shields.io/npm/dw/mapfun?label=npm%20downloads)
+![PyPI downloads](https://img.shields.io/pypi/dw/mapfun?label=pypi%20downloads)
 # License 
 This projet is licensed under the terms of MIT License .<br>
 <img src="https://img.shields.io/github/license/zakarialaoui10/zikojs?color=rgb%2820%2C21%2C169%29">
