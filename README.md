@@ -49,7 +49,7 @@ The magic function called `mapfunc`
 |NPM|PYPI|
 |-|-|
 |![](https://img.shields.io/npm/v/mapfun)|![](https://img.shields.io/pypi/v/mapfun)|
-|![downloads](https://img.shields.io/npm/dw/mapfun?label=downloads)|![downloads](https://img.shields.io/pypi/dw/mapfun?label=downloads)|
+|![downloads](https://img.shields.io/npm/dm/mapfun?label=downloads)|![downloads](https://img.shields.io/pypi/dm/mapfun?label=downloads)|
 |![sourcerank](https://img.shields.io/librariesio/sourcerank/npm/mapfun)|![sourcerank](https://img.shields.io/librariesio/sourcerank/pypi/mapfun)|
 # License 
 This projet is licensed under the terms of MIT License .<br>
