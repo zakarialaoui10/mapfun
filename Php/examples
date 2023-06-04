@@ -1,4 +1,5 @@
-$result = mapFun(function($n) {
+$result = mapFun(
+function($n) {
   return $n + 1;
 }, ['skip' => ["string"]], 1,"k", [1, 2],[[1,2]],['a' => 1]);
 
