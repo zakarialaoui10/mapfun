@@ -22,4 +22,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 # Alpine
 # chart 
 
-# avoid logical errors 
+# avoid logical errors  
