@@ -11,7 +11,7 @@ const App = () => {
         {mapFun(n=><li>{n}</li>,squaredNumbers)}
       </ul>
     </div>
-  );
+  ); 
 };
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
