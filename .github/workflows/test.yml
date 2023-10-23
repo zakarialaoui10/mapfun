@@ -17,5 +17,5 @@ jobs:
               run: npm publish --access public
               working-directory: Javascript
               env:
-                  NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+                  NODE_AUTH_TOKEN: ${{variables.NPM_TOKEN}}
  
