@@ -10,7 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Change Directory
-        run: cd main/Javascript
+        run: |
+          cd Javascript
       - name: Checkout code
         uses: actions/checkout@v2
 
