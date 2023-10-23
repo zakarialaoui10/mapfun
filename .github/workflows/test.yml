@@ -1,25 +1,20 @@
-name: Node.js Package Test
+name: Publish npm
 
-on: 
-  push:
-    branches:
-      - main
+on: push
 
 jobs:
-  publish-npm:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: 16
-          registry-url: https://registry.npmjs.org
-
-      - name: Publish 
-        run: npm publish --access public
-        working-directory : Javascript
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+    publish:
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout
+              uses: actions/checkout@v2
+            - name: node
+              uses: actions/setup-node@v2
+              with:
+                  node-version: 12
+                  registry-url: https://registry.npmjs.org
+            - name: publish
+              run: npm publish --access public
+              working-directory: my-package
+              env:
+                  NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
