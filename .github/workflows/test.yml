@@ -9,6 +9,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name : Find File
+        run : cd Javascript
       - name: Checkout code
         uses: actions/checkout@v2
 
@@ -16,8 +18,6 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 16
-      - name : Find File
-        run : cd ./main/Javascript
       - name: Install Dependencies
         run: npm ci
       - name: Run Tests
