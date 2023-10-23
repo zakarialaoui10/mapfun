@@ -1,0 +1,28 @@
+{
+  "name": "mapfun",
+  "version": "0.9.14",
+  "type": "commonjs",
+  "description": "A function that applies a mapping function to an infinite number of input elements, with options to skip certain elements and selectively apply the mapping to keys and/or values of objects.",
+  "main": "Javascript/index.js",
+  "scripts": {
+    "test": "node Javascript/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zakarialaoui10/mapfun.git"
+  },
+  "homepage": "https://github.com/zakarialaoui10/mapfun#javascript",
+  "keywords": [
+    "mapfun",
+    "map",
+    "zikojs",
+    "iteration",
+    "loop",
+    "function"
+  ],
+  "author": "zakaria elalaoui",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zakarialaoui10/mapfun/issues"
+  }
+}
