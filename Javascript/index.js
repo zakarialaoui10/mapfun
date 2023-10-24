@@ -58,5 +58,6 @@ const mapfun = (fun, { skip = [], key = false, value = true } = {}, ...X) => {
     return Y.length === 1 ? Y[0] : Y;
 };
 if (typeof module !== 'undefined' && typeof exports !== 'undefined') {
-  module.exports = {mapfun,flat_obj} ;
+  module.exports = {flat_obj} ;
+  module.exports = mapfun;
 }
