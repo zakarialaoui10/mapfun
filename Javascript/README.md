@@ -16,11 +16,11 @@ npm install mapfun
 ### Import 
  - #### common js : 
 ```javascript
-const mapfun = require("mapfun");
+const {mapfun} = require("mapfun");
 ```
  - #### es module
 ```javascript
-import mapfun from "mapfun" 
+import {mapfun} from "mapfun" 
 ```
 ### unpkg
 ``` html
