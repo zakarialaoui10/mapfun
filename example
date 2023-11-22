@@ -4,7 +4,7 @@ import mapFun from "./mapFun.js"
 const App = () => {  
   const numbers=[1,2,3,4,5,6,7,8,9,10]
   const squaredNumbers = mapFun(n=>n*n, numbers);
-  return (   
+  return (    
     <div>
       <h1>Squared Numbers:</h1>
       <ul> 
