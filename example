@@ -21,5 +21,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
 # Alpine
 # chart 
+# svelte
 
 # avoid logical errors  
