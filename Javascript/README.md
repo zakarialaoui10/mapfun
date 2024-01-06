@@ -1,8 +1,8 @@
-|Problem|Solution|
-|-|-|
-|![problem](https://github.com/zakarialaoui10/mapfun/blob/cbedc3733eda2d26bf3854bb401aea21afc49ee7/Javascript/assets/problem.png?raw=true)|![solution](https://github.com/zakarialaoui10/mapfun/blob/main/Javascript/assets/solution.png?raw=true)|
+ 📝 Javascript provides a built-in Math module with various functions. 
 
-The magic function called `mapfun`
+⚠️However, there is room for improvement in terms of efficiency. For instance, the Math.exp(x) function can calculate the square root of a number x, but it has limitations such as the inability to accept multiple parameters and the inability to map the function to different data types like Arrays and Objects.
+
+💡 In zikojs, I have addressed these limitations, providing a more versatile and efficient solution.
 
 # mapfun
 
