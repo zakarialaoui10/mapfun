@@ -24,4 +24,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 # svelte
 
 # avoid logical errors  
-# update doc
+# update doc ( from zikojs ) 
