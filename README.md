@@ -1,5 +1,5 @@
 |Langage|Problem|Solution|  
-|-|-|-|
+|-|-|-| 
 |Javascript|![Solution](https://github.com/zakarialaoui10/mapfun/blob/cbedc3733eda2d26bf3854bb401aea21afc49ee7/Javascript/assets/problem.png?raw=true)|![Solution](https://github.com/zakarialaoui10/mapfun/blob/main/Javascript/assets/solution.png?raw=true)|
 |Python|![problem](https://github.com/zakarialaoui10/mapfun/blob/cbedc3733eda2d26bf3854bb401aea21afc49ee7/Javascript/assets/problem.png?raw=true)|![problem](https://github.com/zakarialaoui10/mapfun/blob/main/Javascript/assets/solution.png?raw=true)|
 
