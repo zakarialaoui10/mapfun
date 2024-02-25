@@ -3,7 +3,7 @@
 |Javascript|![Solution](https://github.com/zakarialaoui10/mapfun/blob/cbedc3733eda2d26bf3854bb401aea21afc49ee7/Javascript/assets/problem.png?raw=true)|![Solution](https://github.com/zakarialaoui10/mapfun/blob/main/Javascript/assets/solution.png?raw=true)|
 |Python|![problem](https://github.com/zakarialaoui10/mapfun/blob/cbedc3733eda2d26bf3854bb401aea21afc49ee7/Javascript/assets/problem.png?raw=true)|![problem](https://github.com/zakarialaoui10/mapfun/blob/main/Javascript/assets/solution.png?raw=true)|
 
-The magic function called `mapfunc`
+The magic function called `mapfun`
 # mapfun
 - `mapfun` is a function that applies a mapping function to an infinite number of input elements, with options to skip certain elements and selectively apply the mapping to keys and/or values of objects.
 
