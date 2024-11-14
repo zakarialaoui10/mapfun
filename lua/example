@@ -1,0 +1,32 @@
+local callback = math.cos  
+
+local a = {1, 2, 3, {4, 5}}
+local b = {a = 6, b = {7, 8}}
+local c = 10.0
+
+local result = mapfun(callback, a, b, c)
+
+---------------------
+function printTable(t, indent)
+    indent = indent or ""
+    for k, v in pairs(t) do
+        if type(v) == "table" then
+            print(indent .. tostring(k) .. ": {")
+            printTable(v, indent .. "  ")
+            print(indent .. "}")
+        else
+            print(indent .. tostring(k) .. ": " .. tostring(v))
+        end
+    end
+end
+
+-----------------------
+print("Result:")
+for i, res in ipairs(result) do
+    print("Result " .. i .. ":")
+    if type(res) == "table" then
+        printTable(res)
+    else
+        print(res)
+    end
+end
