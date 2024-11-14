@@ -1,0 +1,23 @@
+class Test
+    attr_accessor :a, :b
+  
+    def initialize(a = nil, b = nil)
+      @a = a
+      @b = b
+    end
+  
+    def clone
+      Test.new(@a, @b)
+    end
+  end
+#######################################
+callback = ->(x) { Math.cos(x) } 
+  
+a = [1, 2, 3, [4, 5]]
+b = Test.new(6, [7, 8])
+c = 10.0
+
+result = mapfun(callback, a, b, c)
+  
+puts "Result:"
+puts result.inspect
