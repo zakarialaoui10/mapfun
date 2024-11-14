@@ -1,0 +1,9 @@
+callback = Math.cos  
+
+a = [1, 2, 3, [4, 5]]
+b = {a: 6, b: [7, 8]}
+c = 10.0
+
+result = mapfun(callback, a, b, c)
+
+console.log result
