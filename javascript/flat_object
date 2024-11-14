@@ -1,0 +1,23 @@
+function flat_obj(obj,depth=Infinity,separator = '.', replacement = '_') {
+    const result = {};
+    let i=0;
+    function recurse(current, path = []) {
+        if(i===depth){
+            Object.assign(result,current)
+            return ;
+        }
+      for (const key in current) {
+        const value = current[key];
+        const newPath = [...path, key];
+        if (typeof value === 'object' && !Array.isArray(value)) {
+          recurse(value, newPath);
+        } else {
+          const flatKey = newPath.join(separator).replace(new RegExp(`\\${separator}`, 'g'), replacement);
+          result[flatKey] = value;
+        }
+        i++;
+      }
+    }
+    recurse(obj);
+    return result;
+}

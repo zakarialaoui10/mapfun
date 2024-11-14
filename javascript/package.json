@@ -1,6 +1,6 @@
 {
   "name": "mapfun",
-  "version": "0.9.14",
+  "version": "0.9.18",
   "type": "commonjs",
   "description": "A function that applies a mapping function to an infinite number of input elements, with options to skip certain elements and selectively apply the mapping to keys and/or values of objects.",
   "main": "index.js",
