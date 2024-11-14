@@ -1,1 +1,0 @@
-const mapfun = require("mapfun");

@@ -1,6 +1,6 @@
 {
-    "name": "ziko/mapFun",
+    "name": "@ziko/mapfun",
     "description": "MapFun library",
     "type": "library",
-    "license": "MIT",
+    "license": "MIT"
 }

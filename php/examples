@@ -1,5 +1,20 @@
-$result = mapFun(
-function($n) {
-  return $n + 1;
-}, ['skip' => ["string"]], 1,"k", [1, 2],[[1,2]],['a' => 1]);
+class Test {
+    public $a;
+    public $b;
 
+    public function __construct($a = null, $b = null) {
+        $this->a = $a;
+        $this->b = $b;
+    }
+}
+
+// Example usage
+$callback = 'cos'; 
+
+$a = [1, 2, 3, [4, 5]];
+$b = new Test(6, [7, 8]);
+$c = 10.0;
+
+$result = mapfun($callback, $a, $b, $c);
+
+print_r($result);
