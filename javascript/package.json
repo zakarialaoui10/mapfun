@@ -1,11 +1,11 @@
 {
   "name": "mapfun",
   "version": "0.9.18",
-  "type": "commonjs",
+  "type": "module",
   "description": "A function that applies a mapping function to an infinite number of input elements, with options to skip certain elements and selectively apply the mapping to keys and/or values of objects.",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "node test.js"
+    "build": "rollup -c rollup.config.js"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,11 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/zakarialaoui10/mapfun/issues"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^4.26.0"
   }
 }
