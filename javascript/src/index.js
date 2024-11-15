@@ -3,7 +3,7 @@ const mapfun = (callback, { skip = [], key = false, value = true } = {}, ...X) =
     if (typeof skip === 'string'||[null,undefined].includes(skip))skip=[skip];
       const skipPrimitives = [];
       const skipObjects = [];
-      skip.forEach((element) =>(typeof element==="object"&&element !==null)?skipObjects.push(element):skipPrimitives.push(element));
+      skip.forEach(n =>(typeof n==="object" && n !== null)?skipObjects.push(n):skipPrimitives.push(n));
         if(skipPrimitives.includes(typeof x)||skipPrimitives.includes(x)) return x;
         if(skipObjects.some(n=>x instanceof n))return x;
     if (x === null) return callback(null);
@@ -17,8 +17,8 @@ const mapfun = (callback, { skip = [], key = false, value = true } = {}, ...X) =
     if (x instanceof Map) return new Map([...x].map(n =>{
         return [
             key ? mapfun(callback,{},n[0]) : n[0],
-            value ? mapfun(callback,{},n[1]) : n[1],
-            ]
+            value ? mapfun(callback,{},n[1]) : n[1]
+          ]
     }));
     if (x instanceof Object) return Object.fromEntries(
       Object.entries(x).map(([KEY, VALUE]) => [
@@ -30,7 +30,6 @@ const mapfun = (callback, { skip = [], key = false, value = true } = {}, ...X) =
   });
     return Y.length === 1 ? Y[0] : Y;
 };
-
 export{
   mapfun
 }
