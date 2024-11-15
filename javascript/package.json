@@ -1,6 +1,6 @@
 {
   "name": "mapfun",
-  "version": "0.9.18",
+  "version": "0.9.19",
   "type": "module",
   "description": "A function that applies a mapping function to an infinite number of input elements, with options to skip certain elements and selectively apply the mapping to keys and/or values of objects.",
   "main": "src/index.js",
@@ -30,5 +30,8 @@
     "@rollup/plugin-node-resolve": "^15.3.0",
     "@rollup/plugin-terser": "^0.4.4",
     "rollup": "^4.26.0"
+  },
+  "dependencies": {
+    "ziko": "^0.0.18"
   }
 }

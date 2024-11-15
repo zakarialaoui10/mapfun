@@ -1,7 +1,3 @@
-/*
-Developped by zakaria elaloui
-Github : https://github.com/zakarialaoui10
-*/
 const mapfun = (callback, ...X) => {
   const Y = X.map((x) => {
     if (x === null) return callback(null);
