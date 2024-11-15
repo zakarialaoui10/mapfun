@@ -1,7 +1,12 @@
 declare const mapfun: (
-    callback: (value: any) => any,
+    callback: function ,
+    options?: {
+      skip?: (string | any)[],
+      key?: boolean,
+      value?: boolean
+    },
     ...X: any[]
-) => any | any[];
+  ) => any;
   
-export { mapfun };
+  export { mapfun };
   
