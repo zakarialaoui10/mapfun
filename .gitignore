@@ -1,3 +1,5 @@
 **/node_modules
 **/dist
 paper.md
+paper.pdf
+*.pdf
