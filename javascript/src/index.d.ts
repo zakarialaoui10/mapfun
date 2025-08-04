@@ -1,5 +1,5 @@
 declare const mapfun: (
-    callback: function ,
+    callback: Function ,
     options?: {
       skip?: (string | any)[],
       key?: boolean,
